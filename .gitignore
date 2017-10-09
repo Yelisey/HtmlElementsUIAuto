@@ -30,3 +30,5 @@ param/
 src/main/resources/
 target/
 /.idea/compiler.xml
+SeleniumTest.iml
+lib/
