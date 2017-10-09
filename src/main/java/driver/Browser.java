@@ -13,8 +13,7 @@ import java.io.File;
 public class Browser {
 
     private static WebDriver driver = null;
-
-
+    
     public static WebDriver getDriver(String browserType){
         switch (browserType) {
             case "firefox":
@@ -32,22 +31,4 @@ public class Browser {
         }
         return driver;
     }
-
-    public static WebDriver getIE() {
-        driver = new InternetExplorerDriver();
-        return driver;
-    }
-
-    public static WebDriver getFirefox() {
-        driver = new FirefoxDriver();
-        return driver;
-    }
-
-//    public static WebDriver getChrome() {
-//        String driverPath = Utils.getPath(Constants.PARAM_DIR + File.separator +
-//                Constants.DRIVER_DIR + File.separator + "chromedriver.exe");
-//        System.setProperty("webdriver.chrome.driver", driverPath);
-//        driver = new ChromeDriver();
-//        return driver;
-//    }
 }
