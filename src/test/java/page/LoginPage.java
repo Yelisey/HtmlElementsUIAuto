@@ -10,4 +10,8 @@ public class LoginPage {
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
+
+    public void open_login_page(){
+        driver.get("https://www.findx.com/");
+    }
 }

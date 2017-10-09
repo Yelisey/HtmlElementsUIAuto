@@ -13,10 +13,9 @@
     <!--<class name="test.LoginTest"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <test name="ff51">
-        <parameter name="browserType" value="firefox" />
-        <parameter name="browserVersion" value="51.0" />
-        <!--<parameter name="remoteIP" value="192.168.99.100" />-->
+    <test name="Chrome">
+        <parameter name="browserType" value="chrome" />
+        <!--<parameter name="browserVersion" value="51.0" />-->
         <parameter name="appURL" value="https://www.findx.com/"/>
         <classes>
             <class name="test.LoginTest"/>
