@@ -29,3 +29,4 @@ hs_err_pid*
 param/
 src/main/resources/
 target/
+/.idea/compiler.xml

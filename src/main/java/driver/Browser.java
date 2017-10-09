@@ -13,7 +13,7 @@ import java.io.File;
 public class Browser {
 
     private static WebDriver driver = null;
-    
+
     public static WebDriver getDriver(String browserType){
         switch (browserType) {
             case "firefox":
