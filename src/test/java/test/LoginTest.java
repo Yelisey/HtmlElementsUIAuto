@@ -1,12 +1,9 @@
 package test;
 
-import driver.Browser;
+import driver.BrowserInitialize;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
-import page.LoginPage;
-
-import java.io.FileNotFoundException;
-
+import page.SearchPage;
 
 public class LoginTest {
 
@@ -15,18 +12,18 @@ public class LoginTest {
     @Parameters({"browserType"})
     @BeforeClass
     public void setUp(String browser) {
-        driver = Browser.getDriver(browser);
+        driver = BrowserInitialize.getDriver(browser);
+        driver.get("http://www.yandex.com");
     }
 
-    @Test(priority = 1)
-    public void testLogin() throws FileNotFoundException, InterruptedException {
-        LoginPage loginPage = new LoginPage(this.driver);
-        loginPage.open_login_page();
-
+    @Test
+    public void sampleTest() {
+        SearchPage loginPage = new SearchPage(driver);
+        loginPage.search("yandex");
     }
 
     @AfterClass
-    public void tearDown() {
-        this.driver.quit();
+    public void closeDriver() {
+        driver.quit();
     }
 }

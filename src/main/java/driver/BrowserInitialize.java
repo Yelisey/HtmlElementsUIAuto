@@ -10,7 +10,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import java.io.File;
 
 
-public class Browser {
+public class BrowserInitialize {
 
     private static WebDriver driver = null;
 
