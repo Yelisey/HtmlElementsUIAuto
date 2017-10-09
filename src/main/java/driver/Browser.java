@@ -24,7 +24,7 @@ public class Browser {
         driver = new FirefoxDriver();
         return driver;
     }
-    
+
     public static WebDriver getChrome() {
         String driverPath = Utils.getPath(Constants.PARAM_DIR + File.separator +
                 Constants.DRIVER_DIR + File.separator + "chromedriver.exe");
