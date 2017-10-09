@@ -4,7 +4,7 @@
         <parameter name="browserType" value="chrome" />
         <parameter name="appURL" value="https://www.findx.com/"/>
         <classes>
-            <class name="test.SearchTest"/>
+            <class name="test.MainPageTest"/>
         </classes>
     </test>
 </suite>
