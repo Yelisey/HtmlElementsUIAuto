@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import page.SearchPage;
 
-public class LoginTest {
+public class SearchTest {
 
     private WebDriver driver;
 
@@ -18,8 +18,8 @@ public class LoginTest {
 
     @Test
     public void sampleTest() {
-        SearchPage loginPage = new SearchPage(driver);
-        loginPage.search("yandex");
+        SearchPage searchPage = new SearchPage(driver);
+        searchPage.search("yandex");
     }
 
     @AfterClass

@@ -1,7 +1,7 @@
 package driver;
 
-import Utility.Constants;
-import Utility.Utils;
+import utility.Constants;
+import utility.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
